@@ -13,7 +13,7 @@
         <a class="header-logo" href="#">
           <img src="img/logo-technomart.svg" alt="Логотип интернет-магазина «Техномарт»" width="220" height="47">
         </a>
-        <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
           <p class="header-item">
             <label>
               <input type="search" name="search" placeholder="Поиск">
@@ -52,40 +52,42 @@
 
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
-          <div class="features-list">
-            <h3>Материалы</h3>
-            <a href="#">На любой вкус</a>
-          </div>
-          <div class="features-list">
-            <h3>Инструмент</h3>
-            <a href="#">На все случаи</a>
-          </div>
-          <div class="features-list">
-            <h3>Техника</h3>
-            <a href="#">Для стройки</a>
-          </div>
-          <div class="features-item">
-            <ul>
-              <li>
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
-                <a class="button" href="catalog.html">Открыть каталог</a>
-              </li>
-              <li>
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
-                <a class="button" href="catalog.html">Открыть каталог</a>
-              </li>
-            </ul>
-          </div>
-          <div class="features-list">
-            <h3>Скидки 50%</h3>
-            <a href="#">На 350 товаров</a>
-          </div>
-          <div class="features-list">
-            <h3>Доставка</h3>
-            <a href="#">Бесплатно</a>
-          </div>
+        <div class="features-list">
+          <h3>Материалы</h3>
+          <a href="#">На любой вкус</a>
+        </div>
+        <div class="features-list">
+          <h3>Инструмент</h3>
+          <a href="#">На все случаи</a>
+        </div>
+        <div class="features-list">
+          <h3>Техника</h3>
+          <a href="#">Для стройки</a>
+        </div>
+        <div class="features-item">
+          <ul>
+            <li>
+              <h3>Дрели</h3>
+              <p>Соседям на радость!</p>
+              <a class="button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li>
+              <h3>Перфораторы</h3>
+              <p>Настоящие мужские игрушки</p>
+              <a class="button" href="catalog.html">Открыть каталог</a>
+            </li>
+          </ul>
+          <button class="features-button features-button-back" type="button">Назад</button>
+          <button class="features-button features-button-next" type="button">Вперед</button>
+        </div>
+        <div class="features-list">
+          <h3>Скидки 50%</h3>
+          <a href="#">На 350 товаров</a>
+        </div>
+        <div class="features-list">
+          <h3>Доставка</h3>
+          <a href="#">Бесплатно</a>
+        </div>
       </section>
 
       <section class="popular-goods">
@@ -288,7 +290,7 @@
       </div>
     </footer>
 
-    <section class="modal modal-map">
+    <section class="modal">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p>
         <img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адрусу ул. Большая Конюшенная 19/8, Санкт-Петербург">
@@ -296,7 +298,7 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 
-    <section class="modal modal-write">
+    <section class="modal">
       <h2 class="visually-hidden">Напишите нам</h2>
       <button class="modal-close" type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -318,6 +320,5 @@
         <button class="button" type="submit">Отправить</button>
       </form>
     </section>
-
   </body>
 </html>
