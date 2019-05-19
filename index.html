@@ -13,16 +13,20 @@
         <a class="header-logo" href="#">
           <img src="img/logo-technomart.svg" alt="Логотип интернет-магазина «Техномарт»" width="220" height="47">
         </a>
-
-        <!-- Форма поиска -->
-
+        <form class="header-search" action="https://echo.htmlacademy.ru" method="post">
+          <p class="header-item">
+            <label>
+              <input type="search" name="search" placeholder="Поиск">
+            </label>
+          </p>
+        </form>
         <a class="header-bookmarks">Закладки: 0</a>
         <a class="header-basket">Корзина: 0</a>
         <a class="header-order">Оформить заказ</a>
       </div>
 
-      <div>
-        <h1 class="header-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <div class="header-title">
+        <h1 class="header-head">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <a>+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
         <ul class="user-navigation">
@@ -283,5 +287,37 @@
         </p>
       </div>
     </footer>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-popup.jpg" width="940" height="446" alt="Офис компании по адрусу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-write">
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <button class="modal-close" type="button">Закрыть</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p class="write-item">
+          <label>Ваше имя:
+            <input type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p class="write-item">
+          <label>Ваш E-mail:
+            <input type="email" name="email" placeholder="email@example.com">
+          </label>
+        </p>
+        <p class="write-item">
+          <label>Текст письма:
+            <textarea name="message" rows="5" placeholder="В свободной форме"></textarea>
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
+
   </body>
 </html>
