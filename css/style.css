@@ -173,7 +173,7 @@ a {
 
 /*delivery*/
 .delivery {
-  color: #000000; /*Почему текст кнопки, в этом блоке, не поменялся на черный?*/
+  color: #000000;
 }
 
 .delivery h2,
@@ -317,7 +317,7 @@ a {
 }
 
 .modal-form textarea {
-  font-family: PT Sans, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #b5b5b5;
@@ -365,7 +365,7 @@ a {
 }
 
 .page-title {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   background-color: #f4f7f9;
   font-size: 30px;
   line-height: 30px;
@@ -414,7 +414,7 @@ legend {
 }
 
 .sorting {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
   background-color: #f7f3ec;
 }
@@ -468,7 +468,7 @@ legend {
 }
 
 .visualy-popup {
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
