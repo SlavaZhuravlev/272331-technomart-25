@@ -3,42 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="inner-page">
 
-    <header class="page-header page-header-catalog"><!-- Добавил обертку для нижнего маргина в каталоге, он там меньше, по другому не знаю как -->
+    <header class="page-header page-header-catalog">
       <div class="header-section">
         <div class="header-section-wrapper">
-        <a class="header-logo" href="index.html">
-          <img src="img/logo-technomart.svg" alt="Логотип интернет-магазина «Техномарт»" width="110" height="20">
-        </a>
-        <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-          <p class="header-item">
-            <label>
-              <input type="search" name="search" placeholder="Поиск">
-            </label>
-          </p>
-        </form>
-        <div class="header-order-wrapper">
-        <a class="header-bookmarks">Закладки: 0</a>
-        <a class="header-basket">Корзина: 10</a>
-        <a class="header-order">Оформить заказ</a>
-        </div>
+          <a class="header-logo" href="index.html">
+            <img src="img/logo-technomart.svg" alt="Логотип интернет-магазина «Техномарт»" width="110" height="20">
+          </a>
+          <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+            <p class="header-item">
+              <label>
+                <input type="search" name="search" placeholder="Поиск">
+              </label>
+            </p>
+          </form>
+          <div class="header-order-wrapper">
+            <a class="header-bookmarks">Закладки: 0</a>
+            <a class="header-basket">Корзина: 10</a>
+            <a class="header-order">Оформить заказ</a>
+          </div>
         </div>
       </div>
 
       <div class="header-title">
         <h1 class="header-head">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-        <a>+7 (812) 555-05-55</a>
-        <p>г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
-        <a class="name-login" href="#">Равшан Джамшутович</a>
-        <ul class="user-navigation user-login">
-          <li class="login-link"><a href="#">Мои заказы</a></li>
-          <li class="user-link"><a href="#">Личный кабинет</a></li>
-        </ul>
+        <div class="title-wrapper">
+          <a class="header-phone">+7 (812) 555-05-55</a>
+          <p class="header-address">г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+        </div>
+        <div class="user-wrapper">
+          <a class="name-login" href="#">Равшан Джамшутович</a>
+          <ul class="user-navigation user-login">
+            <li class="login-link"><a href="#">Мои заказы</a></li>
+            <li class="user-link "><a href="#">Личный кабинет</a></li>
+          </ul>
+        </div>
       </div>
 
       <nav class="main-nav">
