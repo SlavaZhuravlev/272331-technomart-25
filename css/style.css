@@ -565,8 +565,8 @@ input[type="radio"].visually-hidden {
 
 .features-item-controls i {
   position: absolute;
-  left: 320px;
-  bottom: 60px;
+  left: 315px;
+  bottom: 35px;
   width: 9px;
   height: 9px;
   font-size: 0;
@@ -578,7 +578,7 @@ input[type="radio"].visually-hidden {
 .features-item-controls .controls-active {
   position: absolute;
   left: 295px;
-  bottom: 60px;
+  bottom: 35px;
   width: 11px;
   height: 11px;
   font-size: 0;
@@ -637,6 +637,31 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 195px;
   padding: 10px 45px;
+}
+
+.features-button {
+  position: absolute;
+  width: 25px;
+  height: 45px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.features-button-back {
+  top: 130px;
+  left: 25px;
+  background-image: url(../img/icon-left.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features-button-next {
+  top: 130px;
+  right: 25px;
+  background-image: url(../img/icon-right.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 
@@ -955,6 +980,10 @@ input[type="radio"].visually-hidden {
   padding: 16px 23px;
   color: #ffffff;
   background-color: #32425c;
+  box-shadow:
+    0 1px 0 0 #293449,
+    inset 0 1px 0 0 #405069;
+
 }
 
 .services-item {
@@ -1249,27 +1278,107 @@ input[type="radio"].visually-hidden {
 /*modal-form*/
 
 
-.modal-message,
-.modal-map,
-.modal-adding {
+.modal-map {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 940px;
+  height: 446px;
+  margin-top: -240px;
+  margin-left: -470px;
+  background-image: url("../img/map-popup.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.75)
+}
+
+.modal-map p {
+  margin: 0;
 }
 
 .modal-message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -310px;
+  width: 620px;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
-  box-shadow: 0 -5px 0 0 #ee3643;
+  background-color: #ffffff;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.75);
+  border-top: 5px solid #ee3643;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  background-color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 9px;
+  width: 25px;
+  height: 3px;
+  background-color: #ee3643;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 460px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+
+.modal-form label {
+  font-weight: bold;
+}
+
+.write-item {
+  width: 220px;
+}
+
+.write-item-message {
+  width: 460px;
 }
 
 .modal-form input[type="text"],
 .modal-form input[type="email"] {
+  width: 220px;
+  height: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
   font-family: PT Sans, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #b5b5b5;
   border: 2px solid #b5b5b5;
-  border-radius: 2px;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .modal-form input[type="text"]:hover,
@@ -1287,11 +1396,16 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-form textarea {
+  width: 460px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  padding: 10px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #b5b5b5;
   border: 2px solid #b5b5b5;
+  box-sizing: border-box;
   border-radius: 2px;
 }
 
@@ -1304,6 +1418,20 @@ input[type="radio"].visually-hidden {
 .modal-form textarea:active {
   color: #a9a9a9;
   border: 2px solid #ee3643;
+}
+
+.modal-footer {
+  padding-top: 35px;
+  width: 100%;
+  min-height: 115px;
+  background-color: #f4f4f4;
+}
+
+.modal-btn {
+  display: block;
+  width: 460px;
+  padding: 15px;
+  margin: 0 auto;
 }
 
 
@@ -1854,4 +1982,73 @@ input[type="radio"].visually-hidden {
 
 .aside-footer-catalog {
   margin-top: 0;
+}
+
+
+/*modal-adding*/
+
+
+.modal-adding {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  margin-top: -150px;
+  margin-left: -325px;
+  font-family: "Cuprum", Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.75);
+  border-top: 5px solid #ee4634;
+}
+
+.modal-adding h2 {
+  position: relative;
+  margin: 0;
+  margin: 65px 80px 70px;
+  padding-left: 100px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.modal-adding h2::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 10px;
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.adding-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 110px;
+  background-color: #f1f1f1;
+}
+
+.adding-btn {
+  display: block;
+  width: 220px;
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 80px;
+}
+
+.modal-continue {
+  display: block;
+  padding: 10px 45px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 3px;
 }
