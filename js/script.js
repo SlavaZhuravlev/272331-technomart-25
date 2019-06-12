@@ -2,7 +2,6 @@ var mapButton = document.querySelector('.contacts-button-map');
 var map = document.querySelector('.modal-map');
 var mapClose = map.querySelector('.modal-close');
 
-
 mapButton.addEventListener('click', function(evt) {
   evt.preventDefault();
   map.classList.add('modal-show')

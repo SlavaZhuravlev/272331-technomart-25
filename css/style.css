@@ -1941,15 +1941,6 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.75);
 }
 
-.modal-show {
-  display: block;
-  animation: bounce 0.6s;
-}
-
-.modal-error {
-  animation: shake 0.6s;
-}
-
 .modal-map p {
   position: absolute;
   top: 0;
@@ -2166,4 +2157,13 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
 }
