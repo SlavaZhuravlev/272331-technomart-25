@@ -19,7 +19,6 @@ continueAdding.addEventListener('click', function (evt) {
 });
 
 window.addEventListener('keydown', function (evt) {
-  evt.preventDefault();
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (adding.classList.contains('modal-show')) {
