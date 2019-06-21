@@ -427,8 +427,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   color: #ffffff;
   background-color: #32425c;
-  -webkit-box-shadow: 0 5px 0 0 #293449;
-          box-shadow: 0 5px 0 0 #293449;
+  border-bottom: 5px solid #293449;
 }
 
 .site-nav a {
@@ -1220,7 +1219,7 @@ input[type="radio"].visually-hidden {
 }
 
 .delivery-text {
-  margin-bottom: 40px;
+  width: 390px;
 }
 
 .delivery-company {
@@ -1266,6 +1265,10 @@ input[type="radio"].visually-hidden {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 300px;
+}
+
+.delivery-container-text {
+  width: 180px;
 }
 
 .map {
@@ -1316,6 +1319,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-contacts {
+  width: 330px;
   margin-top: 30px;
   margin-left: 5px;
 }
@@ -1905,6 +1909,11 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.4;
+}
+
 .filter-button {
   margin-top: 45px;
   padding: 10px 40px;
@@ -2293,7 +2302,10 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-form label {
-  font-weight: bold;
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
 }
 
 .write-item {
@@ -2311,7 +2323,7 @@ input[type="radio"].visually-hidden {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
-  font-family: PT Sans, sans-serif;
+  font-family: PT Sans, Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #b5b5b5;
