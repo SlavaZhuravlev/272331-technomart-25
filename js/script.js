@@ -45,7 +45,7 @@ mapClose.addEventListener('click', function (evt) {
 window.addEventListener('keydown', function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (map.classList.contains("modal-show")) {
+    if (map.classList.contains('modal-show')) {
       map.classList.remove('modal-show');
     }
   }
@@ -59,10 +59,10 @@ var loginForm = message.querySelector('[name=name]');
 var email = message.querySelector('[name=email]');
 var form = message.querySelector('form');
 var isStorageSupport = true;
-var storage = "";
+var storage = '';
 
 try {
-  storage = localStorage.getItem("name");
+  storage = localStorage.getItem('name');
 } catch (err) {
   isStorageSupport = false;
 }
